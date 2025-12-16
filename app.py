@@ -1,3 +1,4 @@
+import os
 import sqlite3
 from flask import Flask, request, Response
 from twilio.twiml.messaging_response import MessagingResponse
@@ -75,4 +76,5 @@ def whatsapp():
     return Response(str(resp), mimetype="application/xml")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
+
