@@ -2,7 +2,7 @@
 
 **FreestyleBot** es un chatbot interactivo creado con **Flask** y **Twilio** para **WhatsApp**. Este bot está diseñado para responder preguntas sobre el mundo del **freestyle rap**, proporcionar **consejos útiles**, **recomendaciones de contenido** (como batallas, canciones, playlists), y mucho más. Desarrollado como parte del examen final en la materia de **Interacción Humano-Computador**, el bot fue **desplegado en Vercel** para que sea accesible públicamente.
 
-![FreestyleBot Preview](./resources/preview.png)
+
 
 ## **Características**
 
@@ -31,7 +31,8 @@
    python init_db.py
 
 
-
+``````
+  
 
 **Uso**: 
 
@@ -61,6 +62,8 @@ Para que el bot funcione con **WhatsApp** a través de Twilio, sigue estos pasos
 - **Documentación de Twilio**: [Twilio API Docs](https://www.twilio.com/docs)
 - **Documentación de Flask**: [Flask Docs](https://flask.palletsprojects.com/)
 - **Vercel**: [Vercel Docs](https://vercel.com/docs)
+
+
 
 
 
