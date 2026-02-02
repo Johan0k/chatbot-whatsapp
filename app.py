@@ -186,9 +186,10 @@ def whatsapp():
         add_history(user, "assistant", answer)
         resp.message(clip(answer))
 
-    except Exception:
-        # fallback simple
-        resp.message("Hubo un error procesando tu mensaje. Intenta nuevamente en unos segundos.")
+    except Exception as e:
+        print("ERROR IA:", repr(e))
+        resp.message("Hubo un error procesando tu mensaje. Revisa la consola del servidor.")
+    
 
     return Response(str(resp), mimetype="application/xml")
 
